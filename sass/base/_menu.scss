@@ -1,0 +1,72 @@
+.hamburger {
+    position: absolute;
+    top: 50px;
+    // left: 15px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long {
+        width: 36px;
+    }
+}
+
+.menu {
+    display: flex;
+    padding-top: 35px;
+    position: absolute;
+    // top: 0;
+    left: -100%;
+    width: 660px;
+    height: 100px;
+    z-index: 10;
+    visibility: hidden; //Изначально делает этот элемент скрытым
+    // opacity: 0;
+    transition: all 1s; // все анимации по 0.6 сек
+    &.active {
+        left: 340px;
+        visibility: visible;
+    }
+    &__block {
+        align-items: center;
+        display: flex;
+        position: relative;
+        // left: -100%;    //выезжает вместе с основным меню
+        width: 622px;
+        background-color: $main-color;
+        height: 50px;
+        transition: all 1s;
+        border-radius: 4px;
+    }
+    &__close {
+        width: 100px;
+        position: absolute;
+        top: 11px;
+        left: 15px;
+        cursor: pointer;
+    }
+    &__list {
+        margin-top: 15px;
+        margin-left: 300px;
+        width: 280px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }     
+    }
+}
