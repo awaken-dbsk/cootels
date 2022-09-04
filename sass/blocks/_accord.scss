@@ -1,0 +1,78 @@
+.wrapper {
+	margin-top: 50px;
+	flex-direction: column;
+}
+.accordion {
+	width: 580px;
+	height: 60px;
+	margin: 5px 1px 0 auto;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(225,225,225,1);
+	overflow: hidden;
+	transition: height 0.3s ease;
+	margin-bottom: 20px;
+	.accordion_tab {
+		padding: 20px;
+		cursor: pointer;
+		user-select: none;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #0E1734;
+		position: relative;
+        .accordion_circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute; // Делает опредленное позиционирование плюса в блоках относительно родителя (mobile_item)//
+            left: 50%;  //смещенеия плюска влево на 50% от картинки//
+            transform: translateX(-50%); //при смещенее влево - это минус. вправо - это +. применяется свойство с "Left" //
+            bottom: -11px;
+            width: 29px;
+            height: 29px;
+            background: #FF620A;
+            opacity: 0.8;
+            margin: 0 auto;
+            border-radius: 100%; //Делает блок круглым//
+        }
+		.accordion_arrow {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 20px;
+			width: 15px;
+			height: 15px;
+			transition: all 0.3s ease;
+            
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&.active {
+			.accordion_arrow {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+	&.active {
+		height: 150px;
+	}
+	.accordion_content {
+		padding: 20px;
+		border-top: 1px solid #e9e9e9;
+		.accordion_item {
+			margin-bottom: 20px;
+			p {
+				&:last-child {
+					color: #9a9b9f;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}

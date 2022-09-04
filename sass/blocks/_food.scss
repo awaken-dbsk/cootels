@@ -1,0 +1,42 @@
+.food {
+    padding-top: 100px;
+    flex-direction: column;
+    &__activites {
+        display: flex;
+        width: 1090px;
+        justify-content: space-between;
+        padding-bottom: 90px;
+    }
+    &__text {
+        width: 580px;
+        height: 384px;
+        align-items:center;
+    }
+    &__title {
+        margin-top: 110px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 150%;
+        /* identical to box height, or 54px */
+
+        letter-spacing: -0.01em;
+
+        color: #192252;
+    }
+    &__descr {
+        margin-top: 25px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 27px */
+        color: #848FAC;
+    }
+    &__img {
+        width: 384px;
+        height: 384px;
+    }
+}

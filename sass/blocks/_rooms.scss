@@ -1,0 +1,103 @@
+.rooms {
+height: 1100px;
+    &__text {
+        width: 580px;
+        text-align: center;
+        margin: 0 auto;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 150%;
+        /* identical to box height, or 54px */
+
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #192252;
+    }
+    &__subtitle {
+        margin-top: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 27px */
+        text-align: center;
+        color: #848FAC;
+    }
+    &__button {
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        width: 165px;
+        height: 51px;
+        background: $main-color;
+        border-radius: 4px;
+        // text 
+        justify-content: center;
+        text-align: center;
+        align-items:center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        &:hover {
+            text-decoration: underline;
+            color:#FFFFFF;
+        }
+    }
+    &__wrap {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__room {
+        width: 384px;
+        flex-direction: column;
+        // height: ;
+        img {
+            width: 384px;
+            height: 483px;
+        }
+        // a {
+        //     text-decoration: underline;
+        //     &:hover {
+        //         color: #FFFFFF;
+        //      }
+        // }
+    }
+    &__name {
+        margin-top: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        /* identical to box height, or 36px */
+        color: #000000;
+    }
+    &__subname {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 27px */
+        color: #848FAC;
+    }
+    &__more {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #424F7B;
+    }
+}

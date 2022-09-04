@@ -1,0 +1,29 @@
+.head {
+    display: block;
+    justify-content: space-between;
+    &__button {
+        position: absolute;
+        top: 35px;
+        display: flex;
+        width: 121px;
+        height: 47px;
+        margin-left: 1050px;
+        background: $main-color;
+        border-radius: 4px;
+        // text 
+        justify-content: center;
+        text-align: center;
+        align-items:center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    a {
+        &:hover {
+            color:#FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.castomers {
+    margin-top: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.title {
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    /* identical to box height, or 54px */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #192252;
+}
+.wrapper {
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    width: 795px;
+    
+    & > .inner {
+      display: flex;
+      grid-gap: 1em;
+      transition: all 1s ease-in-out;
+    }
+  }
+  
+  .card {
+    width: 795px;
+    justify-content: center;
+    flex-direction: column;
+    & > img {
+      border-top-right-radius: inherit;
+      border-top-left-radius: inherit;
+      display: block;
+      margin: auto;
+      border-radius: 100px;
+      width: 100px;
+      height: 100px;
+    //   width: 17.5em;
+    }
+    .content {
+        flex-direction: column;
+        &__text {
+            text-align: center;
+            margin-top: 30px;
+            width: 783px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            /* or 27px */
+
+            text-align: center;
+
+            color: #848FAC;
+        }
+        &__name {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            /* identical to box height, or 30px */
+            text-align: center;
+            color: #192252;
+        }
+    }
+  }
+  
+  .map {
+    margin-top: 35px;
+    & > button {
+      all: unset;
+      background:#ff620a;
+      cursor: pointer;
+      margin: 0 0.125em;
+      position: relative;
+      user-select: none;
+      @include circle(1em);
+  
+      &.active {
+        opacity: 0.4;
+        &:after {
+          background: #ff620a;
+          content: "";
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          @include circle(0.5em);
+        }
+      }
+    }
+  }
+  
